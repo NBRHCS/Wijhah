@@ -1,0 +1,52 @@
+name: Bug report
+description: أبلغ عن سلوك غير متوقع يمكن إعادة إنتاجه
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: شكرًا لمساعدتنا في تحسين وجهة. لا تستخدم هذا النموذج للإبلاغ عن ثغرة أمنية.
+  - type: checkboxes
+    attributes:
+      label: فحوص أولية
+      options:
+        - label: بحثت في Issues الحالية ولم أجد بلاغًا مطابقًا.
+          required: true
+        - label: لا يحتوي البلاغ على بيانات شخصية أو أسرار.
+          required: true
+  - type: textarea
+    attributes:
+      label: وصف المشكلة
+      description: ما السلوك الذي حدث، وما الذي كنت تتوقعه؟
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: خطوات إعادة الإنتاج
+      placeholder: |
+        1. افتح ...
+        2. اختر ...
+        3. لاحظ ...
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: لغة الواجهة
+      options:
+        - العربية
+        - English
+        - اللغتان
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: البيئة
+      description: نظام التشغيل، المتصفح وإصداره، وحجم الشاشة إن كان ذا صلة.
+      placeholder: Windows 11, Edge 140, 1440x900
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: أدلة إضافية
+      description: أضف سجل خطأ منقحًا أو لقطة شاشة خالية من البيانات الخاصة عند الحاجة.

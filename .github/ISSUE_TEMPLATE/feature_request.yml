@@ -1,0 +1,38 @@
+name: Feature request
+description: اقترح تحسينًا واضحًا للمستخدم أو للمشروع
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: اشرح المشكلة أولًا، ثم الحل المقترح وأثره على العربية والإنجليزية.
+  - type: checkboxes
+    attributes:
+      label: فحوص أولية
+      options:
+        - label: بحثت في Issues الحالية ولم أجد اقتراحًا مطابقًا.
+          required: true
+  - type: textarea
+    attributes:
+      label: المشكلة أو الحاجة
+      description: من المستفيد، وما الذي يصعب عليه الآن؟
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: الحل المقترح
+      description: صف السلوك المطلوب ومثالًا مختصرًا إن أمكن.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: بدائل ونطاق
+      description: ما البدائل التي فكرت فيها، وما الذي يقع خارج نطاق الاقتراح؟
+  - type: checkboxes
+    attributes:
+      label: اعتبارات المشروع
+      options:
+        - label: راعيت واجهتي RTL وLTR.
+        - label: لا يقدم الاقتراح تقديرات مهنية غير موثقة كحقائق.
+        - label: أستطيع المساعدة في التنفيذ أو الاختبار.
