@@ -81,11 +81,16 @@ npm run dev
 | --- | --- |
 | `npm run dev` | تشغيل بيئة التطوير المحلية. |
 | `npm run build` | إنشاء بناء الإنتاج. |
+| `npm run build:vercel` | إنشاء بناء Next.js متوافق مع Vercel. |
 | `npm run start` | تشغيل بناء الإنتاج محليًا عبر Wrangler بعد البناء. |
 | `npm run lint` | فحص TypeScript وReact وNext.js باستخدام ESLint. |
 | `npm run typecheck` | فحص الأنواع دون إنشاء ملفات. |
 | `npm run test:assessment` | تشغيل اختبارات صحة وتوازن نظام التقييم. |
 | `npm run db:generate` | إنشاء migration من مخطط Drizzle. |
+
+## النشر على Vercel
+
+يستخدم Vercel أمر `npm run build:vercel` المعرّف في `vercel.json`. تعمل الواجهة والتقييم والاستكشاف والمقارنة وخرائط الطريق كاملة. تُحفظ النتائج والمفضلة وتقدم خرائط الطريق في متصفح المستخدم على هذا الجهاز، بينما تبقى مزامنة الحساب عبر D1 وSign in with ChatGPT خاصة ببيئة OpenAI Sites الحالية.
 
 ## هيكل المشروع
 

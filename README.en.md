@@ -81,11 +81,16 @@ Open the URL printed by Vite. Development uses local D1 storage and a mock ident
 | --- | --- |
 | `npm run dev` | Start the local development environment. |
 | `npm run build` | Create a production build. |
+| `npm run build:vercel` | Create the Vercel-compatible Next.js build. |
 | `npm run start` | Run the built Worker locally through Wrangler. |
 | `npm run lint` | Check TypeScript, React, and Next.js code with ESLint. |
 | `npm run typecheck` | Check types without emitting files. |
 | `npm run test:assessment` | Run assessment correctness and balance tests. |
 | `npm run db:generate` | Generate a migration from the Drizzle schema. |
+
+## Deploying to Vercel
+
+Vercel uses the `npm run build:vercel` command defined in `vercel.json`. The interface, assessment, exploration, comparison, and roadmaps remain fully available. Results, favorites, and roadmap progress are stored in the user's browser on that device; account sync through D1 and Sign in with ChatGPT remains specific to the existing OpenAI Sites environment.
 
 ## Project Structure
 

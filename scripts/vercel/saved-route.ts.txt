@@ -1,0 +1,13 @@
+const unavailable = () =>
+  Response.json(
+    { error: "account-saving-unavailable", storage: "browser" },
+    { status: 501 },
+  );
+
+export async function GET() {
+  return unavailable();
+}
+
+export async function POST() {
+  return unavailable();
+}
